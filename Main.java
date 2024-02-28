@@ -1,7 +1,11 @@
 class Main {
     public static void main(String[] args) {
         System.out.println("Running program #1");
-        var result1 = patternMatching.Answer.getOccurrences("Here is an example. Right here.", "here");
+        var result1 = patternMatching.Answer.myMethod("Here is an example. Right here.", "here");
+        System.out.println(result1);
+
+        System.out.println("Running program #1 - Suggested solution");
+        result1 = patternMatching.Answer.suggested("Here is an example. Right here.", "here");
         System.out.println(result1);
 
         System.out.println("Running program #2");
