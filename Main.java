@@ -33,10 +33,12 @@ class Main {
         /////////////
 
         System.out.println("Running program #4");
-        wordsWithChars.Answer.myMethod();
+        var result4 = wordsWithChars.Answer.myMethod("a string of mostly smaller words");
+        System.out.println(result4);
         
         System.out.println("Running program #4 - Suggested solution");
-        wordsWithChars.Answer.suggested();
+        result4 = wordsWithChars.Answer.suggested("another string with words of varying sizes");
+        System.out.println(result4);
 
         /////////////
 
