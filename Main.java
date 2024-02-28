@@ -23,10 +23,12 @@ class Main {
         /////////////
 
         System.out.println("Running program #3");
-        calculateAverage.Answer.myMethod();
+        var result3 = calculateAverage.Answer.myMethod(Arrays.asList(2, 5, 20, 30, 56));
+        System.out.println(result3);
         
         System.out.println("Running program #3 - Suggested solution");
-        calculateAverage.Answer.suggested();
+        result3 = calculateAverage.Answer.suggested(Arrays.asList(-20, 30, -56));
+        System.out.println(result3);
 
         /////////////
 
