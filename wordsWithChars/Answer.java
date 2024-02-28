@@ -1,7 +1,14 @@
 package wordsWithChars;
 
 public class Answer {
-    public static void method() {
-        // todo 
+    public static void myMethod() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'myMethod'");
     }
+
+    public static void suggested() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'myMethod'");
+    }
+
 }

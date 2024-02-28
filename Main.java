@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 class Main {
     public static void main(String[] args) {
         System.out.println("Running program #1");
@@ -8,16 +10,39 @@ class Main {
         result1 = patternMatching.Answer.suggested("Here is an example. Right here.", "here");
         System.out.println(result1);
 
+        /////////////
+
         System.out.println("Running program #2");
-        reverseOrder.Answer.reverse();
+        var result2 = reverseOrder.Answer.myMethod(Arrays.asList(2, 5, 20, 30, 56));
+        System.out.println(result2);
         
+        System.out.println("Running program #2 - Suggested solution");
+        result2 = reverseOrder.Answer.suggested(Arrays.asList(-20, 30, -56));
+        System.out.println(result2);
+
+        /////////////
+
         System.out.println("Running program #3");
-        calculateAverage.Answer.calculate();
+        calculateAverage.Answer.myMethod();
+        
+        System.out.println("Running program #3 - Suggested solution");
+        calculateAverage.Answer.suggested();
+
+        /////////////
 
         System.out.println("Running program #4");
-        wordsWithChars.Answer.method();
+        wordsWithChars.Answer.myMethod();
+        
+        System.out.println("Running program #4 - Suggested solution");
+        wordsWithChars.Answer.suggested();
+
+        /////////////
 
         System.out.println("Running program #5");
-        indicesOfSum.Answer.returnIndices();
+        indicesOfSum.Answer.myMethod();
+        
+        System.out.println("Running program #5 - Suggested solution");
+        indicesOfSum.Answer.suggested();
+
     }
 }
