@@ -43,10 +43,11 @@ class Main {
         /////////////
 
         System.out.println("Running program #5");
-        indicesOfSum.Answer.myMethod();
+        var result5 = indicesOfSum.Answer.myMethod(Arrays.asList(1, 2, 3), 3);
+        System.out.println(result5);
         
         System.out.println("Running program #5 - Suggested solution");
-        indicesOfSum.Answer.suggested();
-
+        result5 = indicesOfSum.Answer.suggested(Arrays.asList(4, 5, 6, 8), 13);
+        System.out.println(result5);
     }
 }
